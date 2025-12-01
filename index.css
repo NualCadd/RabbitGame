@@ -1,0 +1,65 @@
+body{
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    background-color: #b6f7f1ff;
+}
+.container{
+    width:5000px;
+    height:900px;    
+    position: relative;
+    background-image: url('surface.png');
+    background-size:contain;
+    image-rendering:pixelated;
+    margin-top:200px;
+}
+
+#rabbit{
+    position:absolute;
+    left:100px;
+    top:475px;
+    height:200px;
+    image-rendering:pixelated;
+    transition:top 0.35s linear;
+}
+.screen{
+    border:2px solid black;
+    border-radius:15px;
+    width:500px;
+    height:500px;
+    background: linear-gradient(to right, #56af3bff, #67b653ff, #add848ff);
+    position:absolute;
+    top:15%;
+    left:33%;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    z-index:3;
+}
+.screen p{
+    font-size:30px;
+    font-family: 'Press Start 2P', cursive;
+}
+#score{
+    position:absolute;
+    top:7%;
+    left:75%;
+    font-weight:bold;
+    font-size:30px;
+    color : #ffa600ff;
+    font-family: 'Press Start 2P', cursive;
+}
+#restart{
+    font-family:'press start 2p', cursive;
+    font-size:20px;
+    border:2px solid black;
+    border-radius:10px;
+    transition:all 0.2s linear;
+}
+#restart:hover{
+    cursor:pointer;
+    background-color:black;
+    color:white;
+    transform:scale(1.1);
+}
